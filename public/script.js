@@ -21,14 +21,14 @@ const btn = document.getElementById("menu-btn");
 //     });
 //   });
 // });
-const links = document.querySelectorAll(".nav-link");
+const links = document.querySelectorAll(".nav-link", "menu-part" );
 
 links.forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
 
     const targetId = this.getAttribute("href"); // #home, #service, etc
-    const targetSection = document.querySelector();
+    const targetSection = document.querySelector("#home");
 
     if (targetSection) {
       targetSection.scrollIntoView({
